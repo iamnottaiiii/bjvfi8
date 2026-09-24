@@ -1,7 +1,17 @@
-name: test
-on: workflow_dispatch
+name: Ingest m150 sites
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/ingest.yml'
+
 jobs:
-  t:
+  ingest:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hi
+      - uses: actions/checkout@v4
+
+      - name: Download m150 zip from Drive
+        run: |
+          curl -L --retry 3 --max-time 900 "https://drive.usercontent.google.com/download?id=1dsw-yVagxDAoJe8eGT_O0VO-l11ghOIz&export=download&confirm=t" -o /tmp/m150.zip
+          ls -lh /tmp/m150.zip
