@@ -1,0 +1,44 @@
+name: Ingest m150 sites
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/ingest.yml'
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download m150 zip from Drive
+        run: |
+          curl -L "https://drive.google.com/uc?export=download&id=1dsw-yVagxDAoJe8eGT_O0VO-l11ghOIz" -o /tmp/m150.zip
+          ls -lh /tmp/m150.zip
+      
+      - name: Extract sites
+        run: |
+          cd /tmp
+          unzip -q m150.zip
+          # Find the sites directory (m150/ or m151/)
+          ls -d /tmp/m150/
+      
+      - name: Commit sites
+        run: |
+          # Copy site directories to repo root
+          for d in /tmp/m150/*/; do
+            slug=$(basename "$d")
+            if [ "$slug" != "crew_csv" ] && [ -f "$d/index.html" ]; then
+              mkdir -p "$slug"
+              cp "$d/index.html" "$slug/"
+            fi
+          done
+          echo "Copied $(ls -d */ | wc -l) directories"
+      
+      - name: Push
+        run: |
+          git config user.name "Not Ai"
+          git config user.email "iamnottaiii@gmail.com"
+          git add .
+          git commit -m "Ingest m150: $(ls -d */ | wc -l) sites" || echo "Nothing to commit"
+          git push
