@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIG DOG&#x27;S AUTO REPAIR | Auto repair shop in West Mifflin</title>
+<meta name="description" content="BIG DOG&#x27;S AUTO REPAIR, Auto repair shop in West Mifflin. Call (412) 999-0191.">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Verdana',Geneva,sans-serif;background:hsl(188,24%,97%);color:hsl(188,22%,16%);line-height:1.65;}
+h1,h2,h3{font-family:'Book Antiqua','Palatino Linotype',serif;line-height:1.25;}
+.page{display:none;}
+.page.active{display:block;}
+a{color:hsl(188,58%,42%);}
+img{max-width:100%;}
+.btn{display:inline-block;background:hsl(188,58%,42%);color:#ffffff;text-decoration:none;
+  padding:calc(12px * 0.88) calc(26px * 0.88);border-radius:6px;font-weight:bold;
+  border:0;cursor:pointer;font-family:'Verdana',Geneva,sans-serif;font-size:15px;margin:6px 6px 6px 0;}
+.btn.ghost{background:transparent;color:hsl(188,58%,42%);border:2px solid hsl(188,58%,42%);}
+.btn.dark{background:hsl(188,32%,17%);color:#fff;}
+.sample{display:inline-block;font-size:10px;background:hsl(188,30%,92%);color:hsl(188,22%,16%);border:1px solid hsl(188,18%,84%);
+  border-radius:6px;padding:1px 9px;text-transform:uppercase;letter-spacing:1px;margin-left:6px;
+  font-family:'Verdana',Geneva,sans-serif;vertical-align:middle;}
+.fine{font-size:13px;opacity:.75;}
+p{margin-bottom:12px;}
+#menuToggle{display:none;background:hsl(188,58%,42%);color:#ffffff;border:0;padding:9px 20px;
+  border-radius:6px;font-family:'Verdana',Geneva,sans-serif;font-size:15px;cursor:pointer;}
+#mobileMenu{display:none;}
+footer.ft{text-align:center;padding:calc(24px * 0.88);font-size:14px;background:hsl(188,32%,17%);color:#fff;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px;}
+.sec{padding:calc(44px * 0.88) 0;}
+input,textarea,select{width:100%;padding:11px 12px;border:1px solid hsl(188,18%,84%);border-radius:6px;
+  font-family:'Verdana',Geneva,sans-serif;font-size:15px;background:#fff;color:hsl(188,22%,16%);margin-bottom:12px;}
+label{font-weight:bold;font-size:14px;display:block;margin-bottom:4px;}
+#formOk{display:none;background:hsl(188,30%,92%);border:2px solid hsl(188,58%,42%);border-radius:6px;
+  padding:16px;margin-top:10px;}
+
+.brand .bn,.bn{font-size:22px;font-weight:bold;font-family:'Book Antiqua','Palatino Linotype',serif;}
+.bc{font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:.7;}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;
+  background:hsl(188,58%,42%);color:#ffffff;border-radius:6px;font-weight:bold;font-size:20px;font-family:'Book Antiqua','Palatino Linotype',serif;}
+.dnav{display:flex;gap:calc(18px * 0.88);}
+.dnav a{text-decoration:none;color:hsl(188,22%,16%);font-weight:bold;font-size:15px;padding:6px 2px;}
+.dnav a.active{color:hsl(188,58%,42%);border-bottom:3px solid hsl(188,58%,42%);}
+#mobileMenu{flex-direction:column;gap:2px;padding:10px 20px;background:hsl(188,32%,17%);}
+#mobileMenu a{color:#fff;text-decoration:none;padding:10px 4px;border-bottom:1px solid rgba(255,255,255,.15);}
+#mobileMenu.open{display:flex;}
+
+.hdrc{text-align:center;padding:calc(30px * 0.88) 20px 18px;border-bottom:4px solid hsl(188,58%,42%);background:hsl(188,24%,97%);}
+.hdrc .bn{font-size:34px;margin-bottom:4px;}
+.hdrc .dnav{justify-content:center;margin-top:16px;flex-wrap:wrap;}
+@media(max-width:860px){.hdrc .dnav{display:none;}#menuToggle{display:inline-block;margin-top:12px;}}
+
+.split{display:grid;grid-template-columns:1.2fr .8fr;gap:calc(30px * 0.88);align-items:start;}
+.kick{color:hsl(188,58%,42%);letter-spacing:3px;text-transform:uppercase;font-size:13px;margin-bottom:10px;font-weight:bold;}
+h1{font-size:clamp(30px,4.5vw,48px);margin-bottom:12px;}
+.lede{font-size:18px;}
+.panel{background:hsl(188,30%,92%);border:2px solid hsl(188,58%,42%);border-radius:6px;padding:calc(24px * 0.88);}
+.panel h3{margin-bottom:8px;}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:calc(18px * 0.88);margin-top:18px;}
+.hlc{border-left:4px solid hsl(188,58%,42%);padding:6px 0 6px 16px;}
+.hlc h3{margin-bottom:4px;}
+@media(max-width:860px){.split{grid-template-columns:1fr;}}
+
+h2{font-size:32px;margin-bottom:14px;}
+.steps{list-style:none;margin:18px 0;display:flex;flex-direction:column;gap:calc(14px * 0.88);}
+.steps li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid hsl(188,18%,84%);
+  border-radius:6px;padding:calc(18px * 0.88);}
+.num{flex:none;width:44px;height:44px;border-radius:6px;background:hsl(188,58%,42%);color:#ffffff;
+  display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:20px;font-family:'Book Antiqua','Palatino Linotype',serif;}
+.steps h3{margin-bottom:4px;}
+.narrow{max-width:760px;}
+h2{font-size:32px;margin-bottom:14px;}
+
+</style>
+</head>
+<body>
+<header class="hdrc"><div class="brandc"><div class="bn">BIG DOG&#x27;S AUTO REPAIR</div><div class="bc">Auto repair shop &middot; West Mifflin</div></div><nav class="dnav"><a href="#home" data-nav="home">Home</a><a href="#services" data-nav="services">Services</a><a href="#about" data-nav="about">About</a><a href="#reviews" data-nav="reviews">Reviews</a><a href="#contact" data-nav="contact">Contact</a></nav><button id="menuToggle">Menu</button></header><nav id="mobileMenu"><a href="#home" data-nav="home">Home</a><a href="#services" data-nav="services">Services</a><a href="#about" data-nav="about">About</a><a href="#reviews" data-nav="reviews">Reviews</a><a href="#contact" data-nav="contact">Contact</a></nav>
+<main>
+<section class="page" data-page="home"><div class="wrap sec"><div class="split"><div><div class="kick">Auto repair shop &middot; West Mifflin</div><h1>Work done right, the first time.</h1><p>BIG DOG&#x27;S AUTO REPAIR is a Auto repair shop serving West Mifflin. From small repairs to full projects, you get clear pricing and steady communication.</p><p><a class="btn" href="tel:+14129990191">Call (412) 999-0191</a> <a class="btn ghost" data-nav="services" href="#services">Our Services</a></p></div><div class="panel"><h3>Get a free estimate</h3><p>Call <a href="tel:+14129990191">(412) 999-0191</a> today.</p><p class="fine">Hours: call to confirm. <span class="sample">sample</span></p><p><a class="btn dark" data-nav="contact" href="#contact">Contact Us</a></p></div></div><h2 style="margin-top:34px;">Why call us</h2><div class="hl"><div class="hlc"><h3>Licensed pros</h3><p>Trained crew, clean job sites. <span class="sample">sample</span></p></div><div class="hlc"><h3>Free estimates</h3><p>Upfront pricing before work starts. <span class="sample">sample</span></p></div><div class="hlc"><h3>Local service</h3><p>Serving West Mifflin and nearby towns. <span class="sample">sample</span></p></div></div></div></section>
+<section class="page" data-page="services"><div class="wrap sec"><h2>Services</h2><ol class="steps"><li><span class="num">1</span><div><h3>Repairs and maintenance</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li><li><span class="num">2</span><div><h3>New installations</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li><li><span class="num">3</span><div><h3>Renovations</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li><li><span class="num">4</span><div><h3>Inspections and estimates</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li><li><span class="num">5</span><div><h3>Custom project work</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li><li><span class="num">6</span><div><h3>Emergency service</h3><p>Clear scope, clean execution. <span class="sample">sample</span></p></div></li></ol><p class="fine">Service list is a sample. Call to confirm scope and pricing.</p></div></section>
+<section class="page" data-page="about"><div class="wrap sec narrow"><h2>About BIG DOG&#x27;S AUTO REPAIR</h2><p>BIG DOG&#x27;S AUTO REPAIR is a Auto repair shop based in West Mifflin. We focus on clear estimates, tidy job sites, and work we stand behind. <span class="sample">sample</span></p><p><strong>Address:</strong> BIG DOG&#x27;S AUTO REPAIR, Down driveway not shop ontop we are on lower level down driveway, 5038 Buttermilk Hollow Rd, West Mifflin, PA 15122</p><p><strong>Phone:</strong> <a href="tel:+14129990191">(412) 999-0191</a></p><p><a class="btn" data-nav="contact" href="#contact">Get In Touch</a></p></div></section>
+<section class="page" data-page="reviews"><div class="wrap sec narrow"><h2>Reviews</h2><p>Customer reviews for this business are posted on Google Maps.</p><p><a class="btn" href="https://www.google.com/maps/place/?q=place_id:ChIJsZQcBlblNIgRKGWouBJ6Dss" target="_blank" rel="noopener">Read reviews on Google Maps</a></p><p class="fine">Ratings and reviews appear on Google Maps, not on this page.</p></div></section>
+<section class="page" data-page="contact"><div class="wrap sec narrow"><h2>Contact</h2><p><strong>Address:</strong> BIG DOG&#x27;S AUTO REPAIR, Down driveway not shop ontop we are on lower level down driveway, 5038 Buttermilk Hollow Rd, West Mifflin, PA 15122</p><p><strong>Phone:</strong> <a href="tel:+14129990191">(412) 999-0191</a></p><p><strong>Hours:</strong> call to confirm</p><p><a class="btn" href="tel:+14129990191">Call (412) 999-0191</a> <a class="btn ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJsZQcBlblNIgRKGWouBJ6Dss" target="_blank" rel="noopener">Get Directions</a></p><h3 style="margin-top:22px;">Request a callback</h3><form id="quoteForm"><label for="qname">Name</label><input id="qname" name="name" type="text" required><label for="qphone">Phone</label><input id="qphone" name="phone" type="tel" required><label for="qmsg">What do you need?</label><textarea id="qmsg" name="message" rows="4" required></textarea><button class="btn" type="submit">Send Request</button></form><div id="formOk"><strong>Thanks.</strong> Your request was received in this demo form. Please call <a href="tel:+14129990191">(412) 999-0191</a> to confirm. <span class="sample">sample</span></div></div></section>
+</main>
+
+<footer class="ft">© BIG DOG&#x27;S AUTO REPAIR</footer>
+<script>
+(function(){
+function show(pg){
+  var pages=document.querySelectorAll('.page');
+  for(var i=0;i<pages.length;i++){pages[i].classList.toggle('active',pages[i].getAttribute('data-page')===pg);}
+  var navs=document.querySelectorAll('[data-nav]');
+  for(var j=0;j<navs.length;j++){navs[j].classList.toggle('active',navs[j].getAttribute('data-nav')===pg);}
+  var m=document.getElementById('mobileMenu'); if(m){m.classList.remove('open');}
+  if(window.scrollTo){window.scrollTo(0,0);}
+}
+function nav(pg,e){ if(e&&e.preventDefault){e.preventDefault();} show(pg); try{history.pushState({pg:pg},'','#'+pg);}catch(err){} }
+window.navigateTo=nav;
+window.addEventListener('popstate',function(e){
+  var pg=(e.state&&e.state.pg)||(location.hash?location.hash.replace('#',''):'home')||'home'; show(pg);
+});
+document.addEventListener('click',function(e){
+  var el=(e.target&&e.target.closest)?e.target.closest('[data-nav]'):null;
+  if(el){ nav(el.getAttribute('data-nav'),e); return; }
+  var t=(e.target&&e.target.closest)?e.target.closest('#menuToggle'):null;
+  if(t){ var m=document.getElementById('mobileMenu'); if(m){m.classList.toggle('open');} }
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var pg=(location.hash?location.hash.replace('#',''):'home')||'home'; show(pg);
+  var f=document.getElementById('quoteForm');
+  if(f){ f.addEventListener('submit',function(ev){ ev.preventDefault();
+    var ok=document.getElementById('formOk'); if(ok){ok.style.display='block';} f.reset(); }); }
+});
+})();
+</script>
+</body>
+</html>
